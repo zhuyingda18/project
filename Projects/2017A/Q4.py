@@ -1,0 +1,1 @@
+for a in (lambda H,W,d:[['RGBY'[(i + j) // d % 2 + (i - j) // d % 2 * 2] for j in range(W)] for i in range(H)])(*(map(int, input().split()))):print(''.join(a))
